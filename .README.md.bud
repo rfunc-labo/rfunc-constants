@@ -1,0 +1,41 @@
+/**
+ * Bud file for README.md
+ */
+
+'use strict'
+
+const { readmeMdBud } = require('ape-tmpl')
+const pkg = require('./package.json')
+
+let constants = require('./lib')
+
+module.exports = readmeMdBud({
+  pkg,
+  repo: pkg.repository,
+  sections: 'doc/guides/*.md.hbs',
+  badges: {
+    travis: true,
+    codeclimate: true,
+    codeclimateCoverage: true,
+    gemnasium: false,
+    npm: true,
+    standard: true
+  },
+  overview: 'doc/overview.md',
+  links: require('./doc/links'),
+  vars: {
+    values: Object.keys(constants).map((name) => {
+      let value = constants[ name ]
+      let type = typeof value
+      return {
+        name,
+        value: type === 'string' ? `'${value}'` : value,
+        type: type
+      }
+    })
+  }
+})
+
+if (!module.parent) {
+  require('coz').render(__filename)
+}
