@@ -5,7 +5,7 @@
   "main": "lib",
   "scripts": {
     "test": "./ci/test.js",
-    "prepublish": "./ci/build.js"
+    "prepublish": "./ci/build.js && ./ci/browser.js"
   },
   "repository": "rfunc-labo/rfunc-constants",
   "keywords": [
@@ -25,15 +25,16 @@
     "co": "^4.6.0"
   },
   "devDependencies": {
-    "ape-covering": "^3.0.3",
-    "ape-formatting": "^1.0.0",
-    "ape-releasing": "^4.0.1",
+    "ababel": "^1.0.19",
+    "ababel-es2015": "^1.0.2",
+    "amocha": "^1.0.8",
+    "ape-formatting": "*",
+    "ape-releasing": "*",
     "ape-reporting": "^3.0.1",
-    "ape-tasking": "^4.0.3",
-    "ape-testing": "^4.0.0",
-    "ape-tmpl": "^5.0.11",
+    "ape-tasking": "*",
+    "ape-tmpl": "*",
     "ape-updating": "^4.0.4",
-    "coz": "^6.0.3",
+    "coz": "*",
     "injectmock": "^2.0.0"
   },
   "engines": {

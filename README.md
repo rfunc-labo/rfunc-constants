@@ -92,6 +92,7 @@ Values
 | Key | Type | Value |
 | --- | ---- |  ----- |
 | DEFAULT_URL | string | '/rfunc' |
+| RESERVED_METHODS | string | 'then,inspect,toJSON,sub' |
 
 
 <!-- Section from "doc/guides/03.Values.md.hbs" End -->
