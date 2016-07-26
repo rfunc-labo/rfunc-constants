@@ -3,6 +3,7 @@
   "version": "1.0.2",
   "description": "Constant variables for rfunc",
   "main": "lib",
+  "browser": "./shim/browser",
   "scripts": {
     "test": "./ci/test.js",
     "prepublish": "./ci/build.js && ./ci/browser.js"
@@ -28,13 +29,13 @@
     "ababel": "^1.0.19",
     "ababel-es2015": "^1.0.2",
     "amocha": "^1.0.8",
-    "ape-formatting": "*",
-    "ape-releasing": "*",
+    "ape-formatting": "^1.0.2",
+    "ape-releasing": "^4.0.2",
     "ape-reporting": "^3.0.1",
-    "ape-tasking": "*",
-    "ape-tmpl": "*",
+    "ape-tasking": "^4.0.7",
+    "ape-tmpl": "^5.0.14",
     "ape-updating": "^4.0.4",
-    "coz": "*",
+    "coz": "^6.0.14",
     "injectmock": "^2.0.0"
   },
   "engines": {

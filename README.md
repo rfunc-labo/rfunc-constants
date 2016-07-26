@@ -55,6 +55,7 @@ Constant variables for rfunc
 <!-- Section from "doc/guides/01.Installation.md.hbs" Start -->
 
 <a name="section-doc-guides-01-installation-md"></a>
+
 Installation
 -----
 
@@ -68,6 +69,7 @@ $ npm install rfunc-constants --save
 <!-- Section from "doc/guides/02.Usage.md.hbs" Start -->
 
 <a name="section-doc-guides-02-usage-md"></a>
+
 Usage
 ---------
 
@@ -86,6 +88,7 @@ console.log('DEFAULT_URL', DEFAULT_URL)
 <!-- Section from "doc/guides/03.Values.md.hbs" Start -->
 
 <a name="section-doc-guides-03-values-md"></a>
+
 Values
 ---------
 
