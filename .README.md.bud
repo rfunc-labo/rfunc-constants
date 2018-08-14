@@ -4,10 +4,10 @@
 
 'use strict'
 
-const { readmeMdBud } = require('ape-tmpl')
+const {readmeMdBud} = require('ape-tmpl')
 const pkg = require('./package.json')
 
-let constants = require('./lib')
+const constants = require('./lib')
 
 module.exports = readmeMdBud({
   pkg,
@@ -25,7 +25,7 @@ module.exports = readmeMdBud({
   links: require('./doc/links'),
   vars: {
     values: Object.keys(constants).map((name) => {
-      let value = constants[ name ]
+      let value = constants[name]
       let type = typeof value
       return {
         name,
